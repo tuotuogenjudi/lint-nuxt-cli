@@ -47,8 +47,8 @@ $ npm run generate
 ### 取消数据模拟
 - 在浏览器设置`localStorage.removeItem('mock')`
 
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
-
 ## 客户端错误监控
 需要在`app.config.js`中配置apikey
 > view adddress: https://www.fundebug.com
+
+For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
