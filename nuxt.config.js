@@ -36,6 +36,7 @@ module.exports = {
     {src: "~plugins/filters.js", ssr: true},
     {src: "~plugins/directive.js", ssr: true},
     {src: "~plugins/mock.js", ssr: false},
+    {src: '~plugins/fundebug.js', ssr: true},
     // {src: "~plugins/utils.js", ssr: true},
   ],
   // require global css
@@ -60,8 +61,8 @@ module.exports = {
   loading: {color: "#3B8070"},
   // 环境变量
   env: {
-    baseUrl: "http://10.36.1.27:7098",  // ajax base url
-    paymentURL: 'http://sitpay.xsycloud.com.cn',
+    // node ENV
+		ENV: process.env.NODE_ENV
   },
   // Build configuration
   build: {

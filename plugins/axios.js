@@ -1,9 +1,10 @@
 import axios from 'axios'
 import Vue from 'Vue'
 import {Toast, Indicator} from 'mint-ui';
+import { baseUrl } from '~/app.config'
 
 let fetch = axios.create({
-  baseURL: process.env.baseUrl,
+  baseURL: baseUrl,
   timeout: 10000,
   transformResponse: [function (data) {
     let jsonData = JSON.parse(data);

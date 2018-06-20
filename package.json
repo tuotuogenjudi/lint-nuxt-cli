@@ -5,19 +5,21 @@
   "author": "zhangling <zhangling.rd@gmail.com>",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
+    "dev": "NODE_ENV=development nuxt",
+    "build-test": "NODE_ENV=test nuxt build",
+    "build": "NODE_ENV=production nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "nuxt": "^1.4.0",
-    "vuex": "^3.0.1",
-    "mint-ui": "^2.2.13",
     "axios": "^0.18.0",
-    "mock.js": "^0.2.0"
+    "fundebug-javascript": "^1.1.2",
+    "mint-ui": "^2.2.13",
+    "mock.js": "^0.2.0",
+    "nuxt": "^1.4.0",
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
     "@gauseen/nuxt-proxy": "^1.0.1",
